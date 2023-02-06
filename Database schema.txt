@@ -1,0 +1,33 @@
+Database Schema:
+3 tables were used.
+Table 1 name: appform
+consists of:
+firstName-Char(45)
+lastName-CHAR(45)
+department-CHAR(45)
+college-CHAR(45)
+position-CHAR(45)
+id-CHAR(45)
+workshopnum-INT
+attendance-VARCHAR(45)
+email-VARCHAR(45)
+
+Table 2 name:login
+consists of:
+username-VARCHAR(45)
+password-VARCHAR(45)
+
+This table was originally used to store the username
+and passwords but was later not used in code because
+an issue trying to get the pages locked down. This
+table should be used to store the username and passwords
+and read from to make sure only users in the table
+have access to the admin pages.
+
+Table 3 name: workshop
+consists of:
+id-VARCHAR(45)
+workshopdate-VARCHAR(45)
+workshoptime-VARCHAR(45)
+workshoplocation-VARCHAR(45)
+workshopnum-INT.. used as primary key and cannot be null
